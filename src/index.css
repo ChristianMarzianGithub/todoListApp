@@ -41,7 +41,8 @@ a:hover {
 .brand {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
+  align-items: flex-start;
+  gap: 0.3rem;
 }
 
 .brand-link {
@@ -49,6 +50,20 @@ a:hover {
   font-weight: 700;
   font-size: 1.5rem;
   color: #f8fafc;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.brand-logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.35);
+}
+
+.brand-name {
+  line-height: 1;
 }
 
 .tagline {
