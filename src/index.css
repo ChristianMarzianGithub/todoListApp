@@ -48,11 +48,11 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   padding: 1.25rem 2rem;
-  background: linear-gradient(140deg, #fff7ed, #e0f2fe 60%, #f5f3ff);
-  color: var(--color-text);
+  background: linear-gradient(135deg, #fef3c7, #e0f2fe);
+  color: #0f172a;
   gap: 1.5rem;
-  border-bottom: 1px solid var(--color-border);
-  box-shadow: var(--shadow-soft);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.3);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
 }
 
 .brand {
@@ -76,8 +76,8 @@ a:hover {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 0.75rem;
-  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
-  background: var(--color-surface);
+  box-shadow: 0 10px 20px rgba(253, 230, 138, 0.45);
+  background: white;
   padding: 0.25rem;
 }
 
@@ -87,7 +87,7 @@ a:hover {
 
 .tagline {
   font-size: 0.9rem;
-  color: var(--color-text-muted);
+  color: #4b5563;
 }
 
 .primary-nav {
@@ -97,7 +97,7 @@ a:hover {
 }
 
 .primary-nav a {
-  color: var(--color-text);
+  color: #1f2937;
   text-decoration: none;
   padding: 0.4rem 0.7rem;
   border-radius: 0.6rem;
@@ -106,8 +106,8 @@ a:hover {
 
 .primary-nav a.active,
 .primary-nav a:hover {
-  background-color: var(--color-primary-soft);
-  color: var(--color-primary);
+  background-color: rgba(37, 99, 235, 0.12);
+  color: #1d4ed8;
 }
 
 .auth-status {
@@ -115,17 +115,17 @@ a:hover {
   align-items: center;
   gap: 0.75rem;
   font-size: 0.9rem;
-  color: var(--color-text);
+  color: #1f2937;
 }
 
 .user-chip {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: linear-gradient(120deg, var(--color-primary-soft), #f5f3ff);
+  background: rgba(191, 219, 254, 0.45);
   padding: 0.45rem 0.75rem;
   border-radius: 999px;
-  color: var(--color-text);
+  color: #0f172a;
 }
 
 .plan-indicator {
@@ -138,20 +138,13 @@ a:hover {
 }
 
 .plan-free {
-  background: var(--color-primary-soft);
-  color: var(--color-primary);
+  background: #bfdbfe;
+  color: #1d4ed8;
 }
 
 .plan-premium {
-  background: var(--color-warm-soft);
+  background: #fde68a;
   color: #92400e;
-}
-
-.login-hint {
-  color: var(--color-text-muted);
-  background: rgba(255, 255, 255, 0.6);
-  padding: 0.4rem 0.75rem;
-  border-radius: 999px;
 }
 
 button {
@@ -180,13 +173,13 @@ button.primary:hover:not(:disabled) {
 }
 
 button.secondary {
-  background: var(--color-surface);
-  color: var(--color-text);
-  border: 1px solid var(--color-border);
+  background: white;
+  color: #1f2937;
+  border: 1px solid rgba(148, 163, 184, 0.5);
 }
 
 button.secondary:hover:not(:disabled) {
-  background: var(--color-surface-muted);
+  background: #f1f5f9;
 }
 
 button.danger {
@@ -451,20 +444,20 @@ fieldset {
   position: fixed;
   bottom: 1.5rem;
   right: 1.5rem;
-  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  background: #2563eb;
   color: white;
   padding: 0.75rem 1rem;
   border-radius: 0.75rem;
-  box-shadow: 0 12px 26px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
 }
 
 .site-footer {
-  background: var(--color-surface-muted);
-  color: var(--color-text);
+  background: #f8fafc;
+  color: #1f2937;
   padding: 1.75rem 2rem 3rem;
   display: grid;
   gap: 1.5rem;
-  border-top: 1px solid var(--color-border);
+  border-top: 1px solid rgba(148, 163, 184, 0.3);
 }
 
 .footer-content {
@@ -481,13 +474,13 @@ fieldset {
 }
 
 .footer-links a {
-  color: var(--color-primary);
+  color: #2563eb;
   text-decoration: none;
 }
 
 .ad-banner {
-  background: var(--color-surface);
-  border: 1px dashed var(--color-border-strong);
+  background: #f1f5f9;
+  border: 1px dashed rgba(37, 99, 235, 0.25);
   border-radius: 1rem;
   padding: 1rem 1.5rem;
   text-align: center;
@@ -499,7 +492,7 @@ fieldset {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 0.7rem;
-  color: var(--color-accent);
+  color: #0ea5e9;
   margin: 0;
 }
 
