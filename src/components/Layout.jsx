@@ -1,6 +1,7 @@
 import { NavLink, Outlet, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext.jsx';
 import AdBanner from './ads/AdBanner.jsx';
+import logo from '../assets/logo.svg';
 
 const Layout = () => {
   const { user, logout } = useAuth();
@@ -10,7 +11,8 @@ const Layout = () => {
       <header className="site-header">
         <div className="brand">
           <Link to="/" className="brand-link">
-            TodoStack
+            <img src={logo} alt="TodoStack logo" className="brand-logo" />
+            <span className="brand-name">TodoStack</span>
           </Link>
           <span className="tagline">Stay organised everywhere</span>
         </div>

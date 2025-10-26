@@ -32,46 +32,67 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
-  background: #111827;
-  color: #f8fafc;
-  gap: 1rem;
+  padding: 1.25rem 2rem;
+  background: linear-gradient(135deg, #fef3c7, #e0f2fe);
+  color: #0f172a;
+  gap: 1.5rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.3);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
 }
 
 .brand {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
+  align-items: flex-start;
+  gap: 0.3rem;
 }
 
 .brand-link {
   text-decoration: none;
   font-weight: 700;
   font-size: 1.5rem;
-  color: #f8fafc;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand-logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 20px rgba(253, 230, 138, 0.45);
+  background: white;
+  padding: 0.25rem;
+}
+
+.brand-name {
+  line-height: 1;
 }
 
 .tagline {
-  font-size: 0.85rem;
-  color: #cbd5f5;
+  font-size: 0.9rem;
+  color: #4b5563;
 }
 
 .primary-nav {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 
 .primary-nav a {
-  color: #f8fafc;
+  color: #1f2937;
   text-decoration: none;
   padding: 0.4rem 0.7rem;
-  border-radius: 0.5rem;
-  transition: background-color 0.2s ease;
+  border-radius: 0.6rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .primary-nav a.active,
 .primary-nav a:hover {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(37, 99, 235, 0.12);
+  color: #1d4ed8;
 }
 
 .auth-status {
@@ -79,33 +100,36 @@ a:hover {
   align-items: center;
   gap: 0.75rem;
   font-size: 0.9rem;
+  color: #1f2937;
 }
 
 .user-chip {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 0.4rem 0.7rem;
+  background: rgba(191, 219, 254, 0.45);
+  padding: 0.45rem 0.75rem;
   border-radius: 999px;
+  color: #0f172a;
 }
 
 .plan-indicator {
-  padding: 0.1rem 0.5rem;
+  padding: 0.2rem 0.55rem;
   border-radius: 999px;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  font-weight: 600;
 }
 
 .plan-free {
-  background: #2563eb22;
-  color: #bfdbfe;
+  background: #bfdbfe;
+  color: #1d4ed8;
 }
 
 .plan-premium {
-  background: #fbbf24;
-  color: #78350f;
+  background: #fde68a;
+  color: #92400e;
 }
 
 button {
@@ -135,12 +159,12 @@ button.primary:hover:not(:disabled) {
 
 button.secondary {
   background: white;
-  color: #111827;
-  border: 1px solid #e5e7eb;
+  color: #1f2937;
+  border: 1px solid rgba(148, 163, 184, 0.5);
 }
 
 button.secondary:hover:not(:disabled) {
-  background: #f3f4f6;
+  background: #f1f5f9;
 }
 
 button.danger {
@@ -404,19 +428,20 @@ fieldset {
   position: fixed;
   bottom: 1.5rem;
   right: 1.5rem;
-  background: #111827;
+  background: #2563eb;
   color: white;
   padding: 0.75rem 1rem;
   border-radius: 0.75rem;
-  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.3);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
 }
 
 .site-footer {
-  background: #111827;
-  color: #e2e8f0;
-  padding: 1.5rem 2rem 3rem;
+  background: #f8fafc;
+  color: #1f2937;
+  padding: 1.75rem 2rem 3rem;
   display: grid;
   gap: 1.5rem;
+  border-top: 1px solid rgba(148, 163, 184, 0.3);
 }
 
 .footer-content {
@@ -433,13 +458,13 @@ fieldset {
 }
 
 .footer-links a {
-  color: inherit;
+  color: #2563eb;
   text-decoration: none;
 }
 
 .ad-banner {
-  background: #0f172a;
-  border: 1px dashed rgba(148, 163, 184, 0.6);
+  background: #f1f5f9;
+  border: 1px dashed rgba(37, 99, 235, 0.25);
   border-radius: 1rem;
   padding: 1rem 1.5rem;
   text-align: center;
@@ -451,7 +476,7 @@ fieldset {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 0.7rem;
-  color: #22d3ee;
+  color: #0ea5e9;
   margin: 0;
 }
 
