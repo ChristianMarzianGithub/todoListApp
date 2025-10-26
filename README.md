@@ -33,8 +33,8 @@ development or create artifacts for deployment:
 # Build the image (replace todo-stack with your preferred tag)
 docker build -t todo-stack .
 
-# Start the container and expose Vite on port 5173
-docker run --rm -p 5173:5173 todo-stack
+# Start the container and map host port 5173 to container port 8080
+sudo docker run --rm -p 5173:8080 todo-stack
 ```
 
 Open `http://localhost:5173` after the container starts to access the app. Use `CTRL+C` to stop the
